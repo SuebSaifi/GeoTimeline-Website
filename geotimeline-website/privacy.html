@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy policy — Timeline Visualizer</title>
+<meta name="description" content="How Timeline Visualizer handles your Google Maps Timeline data: processed on your device, never uploaded, with no account, analytics, or ads.">
+<link rel="icon" href="assets/img/mark.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/app-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy policy — Timeline Visualizer">
+<meta property="og:description" content="Your Timeline file is never uploaded. No account, analytics, or advertising.">
+<meta property="og:image" content="assets/img/app-icon.png">
+<meta name="theme-color" content="#E90064">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/img/mark.svg" alt="">
+      Timeline Visualizer
+    </a>
+    <nav class="nav" aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="features.html">Features</a>
+      <a href="how-to-use.html">How to use</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <div class="wrap page-head">
+    <h1>Privacy policy</h1>
+    <ul class="meta-list">
+      <li><strong>Applies to:</strong> the Timeline Visualizer mobile app (Android and iOS) and this website</li>
+      <li><strong>Effective date:</strong> 21 August 2026</li>
+      <li><strong>Developer:</strong> MahlerLab</li>
+      <li><strong>Contact:</strong> <a href="mailto:mahlerlabdiy@gmail.com">mahlerlabdiy@gmail.com</a></li>
+    </ul>
+  </div>
+
+  <div class="wrap legal">
+
+    <div class="note">
+      <p>
+        <strong>In short.</strong> Timeline Visualizer is built to process sensitive location
+        history on your device. Your Timeline file, your route, your titles, and your videos are
+        never uploaded to the developer. There is no account, no analytics, no advertising, and
+        no developer-operated server. The one thing that leaves your phone is a request for map
+        tiles — and the app asks before the first time.
+      </p>
+    </div>
+
+    <h2>1. Data the app can access</h2>
+    <p>
+      The app reads only the files you explicitly choose in your device's system file picker: the
+      Google Maps Timeline export (<code>Timeline.json</code>) and any MP4 videos you add to the
+      library. It does not request device location, Google account access, contacts, your photo
+      library for browsing, advertising identifiers, or broad storage permission.
+    </p>
+    <p>The information it works with locally is:</p>
+    <ul>
+      <li>the location points, timestamps, and journeys inside the Timeline file you selected;</li>
+      <li>the name and title template you type for video titles;</li>
+      <li>your video settings — period, length, camera, map style, colours, orientation, and quality;</li>
+      <li>the videos you create or add, with their thumbnails and details.</li>
+    </ul>
+
+    <h2>2. Data stored on your device</h2>
+    <ul>
+      <li>
+        <strong>The Timeline file.</strong> The file picker hands the app its own copy of the file
+        you choose, which is kept in the app's private storage so the same Timeline can be reused
+        for your next video. Choosing a different file replaces it. It is never uploaded.
+      </li>
+      <li>
+        <strong>Export data in progress.</strong> While a video is being created, the selected route
+        points and export settings are held in private app storage so the work can continue when the
+        app is not on screen and can resume if the system restarts the app. This data is removed
+        after completion, cancellation, or failure.
+      </li>
+      <li>
+        <strong>Finished videos.</strong> Videos are written to app storage and then published to
+        your gallery — on Android under <code>Movies/Timeline Visualizer</code>, on iOS to your photo
+        library. <strong>Save as</strong> writes an additional copy wherever you choose.
+      </li>
+      <li>
+        <strong>Video library index.</strong> A local index holds each video's location, title,
+        filename, length, creation date, and Timeline period, plus a small thumbnail in private
+        storage. On Android these are excluded from backup and device transfer, so they are not
+        copied to another device.
+      </li>
+      <li>
+        <strong>Overview images.</strong> A 1080 × 1080 route overview may sit in the app's cache for
+        the completion screen. No visible image file is created unless you choose to save it.
+      </li>
+      <li>
+        <strong>Preferences.</strong> Your defaults — title template, name, period, camera and
+        advanced settings, colours, quality, orientation, and theme — are stored in the app's own
+        settings storage.
+      </li>
+      <li>
+        <strong>Map tile cache.</strong> Downloaded basemap images are cached temporarily to reduce
+        network use, and are cleared when you clear the app's cache or uninstall the app.
+      </li>
+    </ul>
+
+    <h2>3. Network use</h2>
+    <h3>Map tiles from CARTO</h3>
+    <p>
+      To draw the map, the app requests raster map tiles from CARTO. Those requests contain standard
+      zoom/x/y tile identifiers plus normal network metadata such as your IP address and user agent.
+      Tile identifiers correspond to the geographic areas in your selected Timeline and may therefore
+      reveal those areas to CARTO. Before your first Timeline is loaded, the app explains this
+      transfer and lets you cancel.
+    </p>
+    <h3>Elevation tiles from AWS</h3>
+    <p>
+      When the <strong>3D + terrain</strong> map style is selected, the app additionally requests
+      elevation tiles from the AWS Open Data terrain set. These carry the same kind of zoom/x/y
+      identifiers, sampled several zoom levels coarser than the basemap, so they identify the same
+      areas less precisely. No elevation request is made for the flat or plain 3D styles.
+    </p>
+    <h3>What is never sent</h3>
+    <p>
+      The Timeline JSON, your route coordinates, video frames, titles, entered name, and generated
+      videos are not sent to CARTO, to AWS, or to the developer. All network requests use encrypted
+      HTTPS connections.
+    </p>
+    <p>
+      Checking for updates or opening the project page launches your browser at a page you asked for;
+      the destination site then applies its own privacy practices.
+    </p>
+
+    <h2>4. Permissions</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th scope="col">Permission</th><th scope="col">Why it is used</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Internet</td><td>Downloading map tiles, and elevation tiles for the terrain style.</td></tr>
+          <tr><td>Notifications (Android 13+)</td><td>Showing video progress and a completion alert. Declining does not stop video creation and grants no access to personal data.</td></tr>
+          <tr><td>Foreground service (Android)</td><td>Continuing a video export you started after the app leaves the screen, with a visible progress notification and a Cancel action.</td></tr>
+          <tr><td>Photo library access (iOS)</td><td>Saving a finished video to your photo library. Only videos this app creates or that you add are written.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>The app does not request location permission — it reads history from your exported file, not from your device's GPS.</p>
+
+    <h2>5. No accounts, analytics, or advertising</h2>
+    <p>
+      Every feature works without signing in. The app has no analytics, advertising, crash
+      reporting, tracking identifiers, in-app purchases, or developer-operated server. Because
+      nothing is uploaded to the developer, there is no account data for the developer to disclose,
+      correct, or delete on request.
+    </p>
+
+    <h2>6. Children</h2>
+    <p>
+      The app is intended for adults. It is not directed at children and does not knowingly process
+      data from children.
+    </p>
+
+    <h2>7. Deleting your data</h2>
+    <ul>
+      <li><strong>Cached map tiles.</strong> Android: <strong>Settings → Apps → Timeline Visualizer → Storage &amp; cache → Clear cache</strong>. iOS: offload or delete the app.</li>
+      <li><strong>Everything the app stores.</strong> Clear the app's storage or uninstall it. That removes the copied Timeline file, preferences, the video index, and thumbnails.</li>
+      <li><strong>A video file.</strong> Removing an entry from <strong>My videos</strong> does not delete the MP4. Use the confirmed <strong>Delete video</strong> action, or delete the file from where it is stored.</li>
+      <li><strong>Your Google Timeline data itself.</strong> That lives in your Google account and is managed in Google Maps, not in this app.</li>
+    </ul>
+
+    <h2>8. Third-party services</h2>
+    <p>
+      Map tiles come from CARTO and use OpenStreetMap data. Elevation tiles for the terrain style
+      come from the AWS Open Data terrain set, built from public-domain surveys. Their own terms and
+      privacy practices apply to those requests:
+    </p>
+    <ul>
+      <li><a href="https://carto.com/privacy/">CARTO privacy notice</a></li>
+      <li><a href="https://osmfoundation.org/wiki/Privacy_Policy">OpenStreetMap privacy policy</a></li>
+      <li><a href="https://aws.amazon.com/privacy/">AWS privacy notice</a></li>
+      <li><a href="https://registry.opendata.aws/terrain-tiles/">Terrain Tiles on AWS Open Data</a></li>
+    </ul>
+    <p>
+      App distribution is handled by Google Play and the Apple App Store, which collect their own
+      installation and account information under their respective policies.
+    </p>
+
+    <h2>9. This website</h2>
+    <p>
+      These pages are static. They set no cookies, run no analytics, and ask for no personal
+      information. If the site is hosted by a third party such as GitHub Pages, that host may keep
+      standard server logs, including IP addresses, under its own policy.
+    </p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>
+      If the way the app handles data changes, this page and the copy shipped with the app are
+      updated and the effective date above is revised. Material changes are also noted in the
+      release notes.
+    </p>
+
+    <h2>11. Contact</h2>
+    <p>
+      Questions about privacy: <a href="mailto:mahlerlabdiy@gmail.com">mahlerlabdiy@gmail.com</a>.
+      The source code is public at
+      <a href="https://github.com/mahlernim/google-timeline-visualizer">github.com/mahlernim/google-timeline-visualizer</a>,
+      so the behaviour described here can be verified directly.
+    </p>
+
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <strong>Timeline Visualizer</strong> · by MahlerLab<br>
+        <a href="mailto:mahlerlabdiy@gmail.com">mahlerlabdiy@gmail.com</a>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="index.html">Home</a>
+        <a href="features.html">Features</a>
+        <a href="how-to-use.html">How to use</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="terms.html">Terms and conditions</a>
+        <a href="https://github.com/mahlernim/google-timeline-visualizer">GitHub</a>
+      </nav>
+    </div>
+    <p class="disclaimer">
+      Timeline Visualizer is an independent open-source app and is not affiliated with,
+      sponsored by, or endorsed by Google LLC. Google, Google Maps, and Google Maps Timeline
+      are trademarks of Google LLC. Map tiles © CARTO, map data © OpenStreetMap contributors.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>
